@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', 'Candara', 'Trebuchet MS', 'Verdana', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #ffeaa7;
+}
+
+p {
+  font-size: 16px;
+  color: #dfe6e9;
+  margin-bottom: 25px;
+}
+
+input[type="number"] {
+  padding: 12px 16px;
+  width: 80%;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #2c3e50;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #fad0c4, #ff9a9e);
+  transform: scale(1.05);
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffeaa7;
+  min-height: 28px;
+}
